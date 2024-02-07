@@ -12,7 +12,7 @@
     <section class="users">
       <header>
         <div class="content">
-          <img src="descarga (6).jfif" alt="">
+          <img src="descarga (6).jpg" alt="">
           <div class="details">
             <span>Hakiro</span>
             <p>Active now</p>
@@ -28,7 +28,7 @@
       <div class="users-list">
         <a href="#">
           <div class="content">
-            <img src="descarga (6).jfif" alt="">
+            <img src="descarga (6).jpg" alt="">
             <div class="details">
               <span>Hakiro</span>
               <p>This is a test message</p>
@@ -37,7 +37,7 @@
           <div class="status-dot"><i class="fas fa-circle"></i></div>
         </a><a href="#">
           <div class="content">
-            <img src="descarga (6).jfif" alt="">
+            <img src="descarga (6).jpg" alt="">
             <div class="details">
               <span>Hakiro</span>
               <p>This is a test message</p>
@@ -46,7 +46,7 @@
           <div class="status-dot"><i class="fas fa-circle"></i></div>
         </a><a href="#">
           <div class="content">
-            <img src="descarga (6).jfif" alt="">
+            <img src="descarga (6).jpg" alt="">
             <div class="details">
               <span>Hakiro</span>
               <p>This is a test message</p>
@@ -55,7 +55,7 @@
           <div class="status-dot"><i class="fas fa-circle"></i></div>
         </a><a href="#">
           <div class="content">
-            <img src="descarga (6).jfif" alt="">
+            <img src="descarga (6).jpg" alt="">
             <div class="details">
               <span>Hakiro</span>
               <p>This is a test message</p>
@@ -64,7 +64,7 @@
           <div class="status-dot"><i class="fas fa-circle"></i></div>
         </a><a href="#">
           <div class="content">
-            <img src="descarga (6).jfif" alt="">
+            <img src="descarga (6).jpg" alt="">
             <div class="details">
               <span>Hakiro</span>
               <p>This is a test message</p>
@@ -73,7 +73,7 @@
           <div class="status-dot"><i class="fas fa-circle"></i></div>
         </a><a href="#">
           <div class="content">
-            <img src="descarga (6).jfif" alt="">
+            <img src="descarga (6).jpg" alt="">
             <div class="details">
               <span>Hakiro</span>
               <p>This is a test message</p>

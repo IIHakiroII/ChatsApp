@@ -12,7 +12,7 @@
     <section class="chat-area">
       <header>
         <a href="#" class="back-icon"><i class="fas fa-arrow-left"></i></a>
-        <img src="descarga (6).jfif" alt="">
+        <img src="descarga (6).jpg" alt="">
         <div class="details">
           <span>Hakiro</span>
           <p>Active now</p>
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="chat incoming">
-          <img src="descarga (6).jfif" alt="">
+          <img src="descarga (6).jpg" alt="">
           <div class="details">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="chat incoming">
-          <img src="descarga (6).jfif" alt="">
+          <img src="descarga (6).jpg" alt="">
           <div class="details">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="chat incoming">
-          <img src="descarga (6).jfif" alt="">
+          <img src="descarga (6).jpg" alt="">
           <div class="details">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
@@ -58,7 +58,7 @@
           </div>
         </div>
         <div class="chat incoming">
-          <img src="descarga (6).jfif" alt="">
+          <img src="descarga (6).jpg" alt="">
           <div class="details">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
