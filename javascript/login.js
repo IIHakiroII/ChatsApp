@@ -1,13 +1,12 @@
-const searchBar = document.querySelector(".users .search input");
-searchBtn = document.querySelector(".users .search button");
+const form = document.querySelector(".login form"),
+continueBtn = form.querySelector(".button input"),
+errorText = form.querySelector(".error-txt");
 
-searchBtn.onclick = ()=>{
-  searchBar.classList.toggle("active");
-  searchBar.focus();
-  searchBtn.classList.toggle("active");
+form.onsubmit = (e)=>{
+  e.preventDefault(); //preventing form from submitting
 }
-
-setInterval(()=>{
+continueBtn.onclick = ()=>{
+  //start Ajax
   let xhr = new XMLHttpRequest(); //creating XML object
   xhr.open("POST", "php/login.php", true);
   xhr.onload = ()=>{
@@ -23,4 +22,6 @@ setInterval(()=>{
       }
     }
   }
-}, 500);
+  let formData = new FormData(form); //creating new formData object
+  xhr.send(formData); //sending the form data to php
+}
