@@ -1,4 +1,5 @@
 <?php
+session_start();
   include_once "config.php";
   $fname = mysqli_real_escape_string($conn, $_POST['fname']);
   $lname = mysqli_real_escape_string($conn, $_POST['lname']);
@@ -19,7 +20,7 @@
           $img_ext = end($img_explode);
 
           $extensions = ['png', 'jpeg', 'jpg'];
-          if(in_array($img_ext, $img_ext) === true){
+          if(in_array($img_ext, $extensions) === true){
             $time = time();
             $new_img_name = $time.$img_name;
             
@@ -29,7 +30,7 @@
 
               $sql2 = mysqli_query($conn, "INSERT INTO users (unique_id, fname, lname, email, password, img, status)
                       VALUES ({$random_id}, '{$fname}', '{$lname}', '{$email}', '{$password}', '{$new_img_name}', '{$status}')");
-              if(sql2){
+              if($sql2){
                 $sql3 = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");
                 if(mysqli_num_rows($sql3) > 0){
                   $row = mysqli_fetch_assoc($sql3);
