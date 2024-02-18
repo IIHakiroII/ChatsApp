@@ -9,18 +9,14 @@ searchBtn.onclick = ()=>{
 
 setInterval(()=>{
   let xhr = new XMLHttpRequest(); //creating XML object
-  xhr.open("POST", "php/login.php", true);
+  xhr.open("GET", "php/users.php", true);
   xhr.onload = ()=>{
     if(xhr.readyState === XMLHttpRequest.DONE){
       if(xhr.status === 200){
         let data = xhr.response;
-        if(data == "success"){
-          location.href = "users.php";
-        }else{
-          errorText.textContent = data;
-          errorText.style.display = "block";
-        }
+        console.log(data);
       }
     }
   }
+  xhr.send();
 }, 500);
