@@ -32,16 +32,6 @@
         <button><i class="fas fa-search"></i></button>
       </div>
       <div class="users-list">
-        <a href="#">
-          <div class="content">
-            <img src="descarga (6).jpg" alt="">
-            <div class="details">
-              <span>Hakiro</span>
-              <p>This is a test message</p>
-            </div>
-          </div>
-          <div class="status-dot"><i class="fas fa-circle"></i></div>
-        </a>
         
       </div>
     </section>
