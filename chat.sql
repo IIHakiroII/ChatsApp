@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-02-2024 a las 13:01:24
+-- Tiempo de generación: 20-02-2024 a las 15:49:20
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -33,6 +33,33 @@ CREATE TABLE `messages` (
   `outgoing_msg_id` int(255) NOT NULL,
   `msg` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `messages`
+--
+
+INSERT INTO `messages` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) VALUES
+(1, 295304104, 1674855078, 'hey bro'),
+(2, 295304104, 1383272350, 'hi'),
+(3, 1383272350, 295304104, 'hi'),
+(4, 295304104, 1674855078, 'hi'),
+(5, 295304104, 1674855078, 'hola'),
+(6, 295304104, 1674855078, 'como estas'),
+(7, 295304104, 1674855078, 'hola'),
+(8, 295304104, 1383272350, 'hey'),
+(11, 1383272350, 1383272350, 'hola'),
+(14, 1674855078, 1674855078, 'hola'),
+(15, 1674855078, 295304104, 'hola'),
+(16, 295304104, 1674855078, 'hola'),
+(17, 1674855078, 295304104, 'mensaje de 1'),
+(18, 295304104, 1674855078, 'mensaje de 2'),
+(19, 295304104, 1674855078, 'holaaaaaa'),
+(20, 1674855078, 295304104, 'holaas'),
+(21, 295304104, 1674855078, 'hola'),
+(22, 1674855078, 295304104, 'holas'),
+(23, 295304104, 295304104, 'This is last message'),
+(24, 295304104, 295304104, 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),
+(25, 295304104, 295304104, 'aaaaaaaaaaaaaaaaaaaaaassssssssssssssssssssssssssssssssssssssssssssss');
 
 -- --------------------------------------------------------
 
@@ -84,7 +111,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de la tabla `users`

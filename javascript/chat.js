@@ -8,6 +8,7 @@ form.onsubmit = (e)=>{
 }
 
 sendBtn.onclick = ()=>{
+  // let's start Ajax
   let xhr = new XMLHttpRequest(); //creating XML object
   xhr.open("POST", "php/insert-chat.php", true);
   xhr.onload = ()=>{
@@ -17,11 +18,13 @@ sendBtn.onclick = ()=>{
       }
     }
   }
+  // we have to send the form data through ajax to php
   let formData = new FormData(form); //creating new formData object
-  xhr.send(formData);
+  xhr.send(formData); //sending the form data to php
 }
 
 setInterval(()=>{
+  // let's start Ajax
   let xhr = new XMLHttpRequest(); //creating XML object
   xhr.open("POST", "php/get-chat.php", true);
   xhr.onload = ()=>{
@@ -32,6 +35,8 @@ setInterval(()=>{
       }
     }
   }
+
+  // we have to send the form data through ajax to php
   let formData = new FormData(form); //creating new formData object
-  xhr.send(formData);
-}, 500);
+  xhr.send(formData); //sending the form data to php
+}, 500); //this function run frequently after 500ms
