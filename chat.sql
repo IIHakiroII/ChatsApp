@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-02-2024 a las 15:49:20
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 20-02-2024 a las 20:32:45
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -59,7 +59,10 @@ INSERT INTO `messages` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) V
 (22, 1674855078, 295304104, 'holas'),
 (23, 295304104, 295304104, 'This is last message'),
 (24, 295304104, 295304104, 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),
-(25, 295304104, 295304104, 'aaaaaaaaaaaaaaaaaaaaaassssssssssssssssssssssssssssssssssssssssssssss');
+(25, 295304104, 295304104, 'aaaaaaaaaaaaaaaaaaaaaassssssssssssssssssssssssssssssssssssssssssssss'),
+(26, 1674855078, 295304104, 'hey'),
+(27, 1674855078, 295304104, 'hola'),
+(28, 295304104, 1674855078, 'uwu');
 
 -- --------------------------------------------------------
 
@@ -83,9 +86,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `unique_id`, `fname`, `lname`, `email`, `password`, `img`, `status`) VALUES
-(1, 295304104, 'César', 'Malavé', 'cesar123@gmail.com', '1234', '1708217053Captura de pantalla 2024-02-09 211516.png', 'Active now'),
-(2, 1674855078, 'Alfonso', 'Gonzales', 'alfonso123@gmail.com', '12345', '1708217188Captura de pantalla 2024-02-01 220103.png', 'Active now'),
-(3, 1383272350, 'Andrew', 'Neil', 'andrew@gmail.com', 'andrew', '17083467071707402940hhhh.jpg', 'Active now');
+(1, 295304104, 'César', 'Malavé', 'cesar123@gmail.com', '1234', '1708217053Captura de pantalla 2024-02-09 211516.png', 'Offline now'),
+(2, 1674855078, 'Alfonso', 'Gonzales', 'alfonso123@gmail.com', '12345', '1708217188Captura de pantalla 2024-02-01 220103.png', 'Offline now'),
+(3, 1383272350, 'Andrew', 'Neil', 'andrew@gmail.com', 'andrew', '17083467071707402940hhhh.jpg', 'Offline now');
 
 --
 -- Índices para tablas volcadas
@@ -111,7 +114,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
