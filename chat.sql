@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-02-2024 a las 03:17:54
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Tiempo de generación: 20-02-2024 a las 13:01:24
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,19 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `chat`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `messages`
+--
+
+CREATE TABLE `messages` (
+  `msg_id` int(11) NOT NULL,
+  `incoming_msg_id` int(255) NOT NULL,
+  `outgoing_msg_id` int(255) NOT NULL,
+  `msg` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -44,11 +57,18 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_id`, `unique_id`, `fname`, `lname`, `email`, `password`, `img`, `status`) VALUES
 (1, 295304104, 'César', 'Malavé', 'cesar123@gmail.com', '1234', '1708217053Captura de pantalla 2024-02-09 211516.png', 'Active now'),
-(2, 1674855078, 'Alfonso', 'Gonzales', 'alfonso123@gmail.com', '12345', '1708217188Captura de pantalla 2024-02-01 220103.png', 'Active now');
+(2, 1674855078, 'Alfonso', 'Gonzales', 'alfonso123@gmail.com', '12345', '1708217188Captura de pantalla 2024-02-01 220103.png', 'Active now'),
+(3, 1383272350, 'Andrew', 'Neil', 'andrew@gmail.com', 'andrew', '17083467071707402940hhhh.jpg', 'Active now');
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `messages`
+--
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`msg_id`);
 
 --
 -- Indices de la tabla `users`
@@ -61,10 +81,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
