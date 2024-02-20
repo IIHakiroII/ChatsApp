@@ -10,13 +10,13 @@
   <div class="wrapper">
     <section class="chat-area">
       <header>
-      <?php
-        include_once "php/config.php";
-        $user_id = mysqli_real_escape_string($conn, $_GET['user_id']);
-        $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$user_id}");
-        if(mysqli_num_rows($sql) > 0){
-          $row = mysqli_fetch_assoc($sql);
-        }
+        <?php
+          include_once "php/config.php";
+          $user_id = mysqli_real_escape_string($conn, $_GET['user_id']);
+          $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$user_id}");
+          if(mysqli_num_rows($sql) > 0){
+            $row = mysqli_fetch_assoc($sql);
+          }
         ?>
         <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
         <img src="php/images/<?php echo $row['img'] ?>" alt="">
