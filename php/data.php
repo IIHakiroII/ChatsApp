@@ -14,7 +14,11 @@
     // trimming message if word are more than 28
     (strlen($result) > 28) ? $msg = substr($result, 0, 28).'...' : $msg = $result;
     // adding you: text before msg if login id send msg
-    ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "You: " : $you = "";
+    if(isset($row2['outgoing_msg_id'])){
+      ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "You: " : $you = "";
+    }else{
+      $you = "";
+    }
     //check user is online or offline
     ($row['status'] == "Offline now") ? $offline = "offline" : $offline = "";
 
